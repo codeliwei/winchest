@@ -5,7 +5,7 @@ ZTV_ROOT=$PWD
 cd $HOME
 
 if [ ! -d .oh-my-zsh ]; then
-	git clone https://github.com/robbyrussell/oh-my-zsh.git || exit
+	git clone https://github.com/robbyrussell/oh-my-zsh.git .oh-my-zsh || exit
 fi
 cp $ZTV_ROOT/llseek.zsh-theme ./.oh-my-zsh/themes/
 chsh -s `which zsh`
@@ -24,3 +24,6 @@ if [ -f .vimrc ]; then
 	rm -i .vimrc
 fi
 cp $ZTV_ROOT/.vimrc .vimrc
+
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
