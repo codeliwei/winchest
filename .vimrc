@@ -19,6 +19,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'msanders/snipmate.vim'
+Plugin 'kien/ctrlp.vim'
 " iOS development specific
 "Plugin 'Rip-Rip/clang_complete'
 "Plugin 'guns/ultisnips'
