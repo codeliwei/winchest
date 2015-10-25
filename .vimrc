@@ -7,6 +7,7 @@ call vundle#begin()
 " let Vundle manage Vundle
 Plugin 'gmarik/Vundle.vim'
 " plugin from http://vim-scripts.org/vim/scripts.html
+Plugin 'a.vim'
 Plugin 'taglist.vim'
 Plugin 'gtags.vim'
 " plugin from github repo
