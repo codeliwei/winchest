@@ -20,6 +20,8 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'msanders/snipmate.vim'
 Plugin 'kien/ctrlp.vim'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'vim-scripts/ScrollColors'
 " iOS development specific
 "Plugin 'Rip-Rip/clang_complete'
 "Plugin 'guns/ultisnips'
@@ -41,7 +43,7 @@ set hlsearch
 set incsearch
 set t_Co=256
 set laststatus=2
-colorscheme default
+colorscheme darkZ
 hi Search cterm=underline ctermfg=yellow ctermbg=none
 hi Visual cterm=underline ctermfg=yellow ctermbg=none
 hi Pmenu cterm=none ctermfg=yellow ctermbg=darkblue
