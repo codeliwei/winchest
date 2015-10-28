@@ -31,7 +31,7 @@ Plugin 'vim-scripts/ScrollColors'
 call vundle#end()
 
 " === General Options ===
-let mapleader=" "
+"let mapleader=" "
 syntax on
 set encoding=utf-8
 set fileencodings=utf-8
@@ -155,10 +155,10 @@ map ,v :vsplit <C-R>=expand("%:h") . "/" <CR>
 inoremap jj <ESC>
 
 " === Leader Options ===
-nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) - 5)<CR>
-nnoremap <silent> <Leader>= :exe "resize " . (winheight(0) + 5)<CR>
-nnoremap <silent> <Leader>9 :exe "vertical resize " . (winwidth(0) - 5)<CR>
-nnoremap <silent> <Leader>0 :exe "vertical resize " . (winwidth(0) + 5)<CR>
+"nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) - 5)<CR>
+"nnoremap <silent> <Leader>= :exe "resize " . (winheight(0) + 5)<CR>
+"nnoremap <silent> <Leader>9 :exe "vertical resize " . (winwidth(0) - 5)<CR>
+"nnoremap <silent> <Leader>0 :exe "vertical resize " . (winwidth(0) + 5)<CR>
 
 " === Vim Tmux Navigator Options ===
 let g:tmux_navigator_no_mappings = 1
@@ -167,3 +167,8 @@ nnoremap <silent> <C-j> :TmuxNavigateDown<cr>
 nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
 let g:tmux_navigator_save_on_switch = 1
+
+" === CtrlP Options ===
+let g:ctrlp_map = '<c-f>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
