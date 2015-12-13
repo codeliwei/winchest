@@ -152,7 +152,7 @@ map ,t :tabe <C-R>=expand("%:h") . "/" <CR>
 map ,s :split <C-R>=expand("%:h") . "/" <CR>
 map ,v :vsplit <C-R>=expand("%:h") . "/" <CR>
 " map Escape key to jj
-inoremap jj <ESC>
+inoremap jj <ESC>:w<CR>
 
 " === Leader Options ===
 "nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) - 5)<CR>
