@@ -18,10 +18,23 @@ Plugin 'bling/vim-airline'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'michaeljsmith/vim-indent-object'
-Plugin 'msanders/snipmate.vim'
+
+" default snippets (under .vim/bundle/vim-snippets/)
+"   contents:
+"   - snippets/*: snippets using snipMate format
+"   - UltiSnips/*: snippets using UltiSnips format
+Plugin 'honza/vim-snippets'
+" snippet engine(python), supports all snippets in above repo
+"Plugin 'SirVer/ultisnips'
+" snippet engine(VimL), supports snippets/*
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+
 Plugin 'kien/ctrlp.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-scripts/ScrollColors'
+
 " iOS development specific
 "Plugin 'Rip-Rip/clang_complete'
 "Plugin 'guns/ultisnips'
@@ -43,7 +56,7 @@ set hlsearch
 set incsearch
 set t_Co=256
 set laststatus=2
-colorscheme darkZ
+colorscheme default
 hi Search cterm=underline ctermfg=yellow ctermbg=none
 hi Visual cterm=underline ctermfg=yellow ctermbg=none
 hi Pmenu cterm=none ctermfg=yellow ctermbg=darkblue
@@ -152,7 +165,7 @@ map ,t :tabe <C-R>=expand("%:h") . "/" <CR>
 map ,s :split <C-R>=expand("%:h") . "/" <CR>
 map ,v :vsplit <C-R>=expand("%:h") . "/" <CR>
 " map Escape key to jj
-inoremap jj <ESC>
+inoremap jj <ESC>:w<CR>
 
 " === Leader Options ===
 "nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) - 5)<CR>
