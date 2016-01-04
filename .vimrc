@@ -158,6 +158,11 @@ if has("autocmd")
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
+if has("autocmd")
+    " delete trailing whitespaces
+    autocmd BufWritePre *.[c|h] :%s/\s\+$//e
+endif
+
 " === Misc Options ===
 " Open files in the same directory as the current file
 map ,e :e <C-R>=expand("%:h") . "/" <CR>
