@@ -56,6 +56,7 @@ set hlsearch
 set incsearch
 set t_Co=256
 set laststatus=2
+set colorcolumn=81
 colorscheme default
 hi Search cterm=underline ctermfg=yellow ctermbg=none
 hi Visual cterm=underline ctermfg=yellow ctermbg=none
@@ -158,10 +159,10 @@ if has("autocmd")
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
-if has("autocmd")
+"if has("autocmd")
     " delete trailing whitespaces
-    autocmd BufWritePre *.[c|h] :%s/\s\+$//e
-endif
+"    autocmd BufWritePre *.[c|h] :%s/\s\+$//e
+"endif
 
 " === Misc Options ===
 " Open files in the same directory as the current file
