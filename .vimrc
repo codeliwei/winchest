@@ -18,6 +18,7 @@ Plugin 'bling/vim-airline'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'michaeljsmith/vim-indent-object'
+Plugin 'scrooloose/syntastic'
 
 " default snippets (under .vim/bundle/vim-snippets/)
 "   contents:
@@ -157,6 +158,10 @@ endif
 
 if has("autocmd")
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
+if has("autocmd")
+    au FileType python setlocal shiftwidth=4 tabstop=4
 endif
 
 "if has("autocmd")
