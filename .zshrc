@@ -83,6 +83,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gclean='git reset --hard && git clean -df'
+alias vi='vim'
 
 bindkey -v
 bindkey	'^R' history-incremental-search-backward
