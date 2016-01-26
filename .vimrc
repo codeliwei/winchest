@@ -161,7 +161,7 @@ if has("autocmd")
 endif
 
 if has("autocmd")
-    au FileType python setlocal shiftwidth=4 tabstop=4
+    au FileType python setlocal shiftwidth=4 tabstop=4 softtabstop=4
 endif
 
 "if has("autocmd")
