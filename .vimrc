@@ -19,6 +19,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'scrooloose/syntastic'
+Plugin 'vim-scripts/TeTrIs.vim'
 
 " default snippets (under .vim/bundle/vim-snippets/)
 "   contents:
@@ -161,7 +162,8 @@ if has("autocmd")
 endif
 
 if has("autocmd")
-    au FileType python setlocal shiftwidth=4 tabstop=4 softtabstop=4
+    au FileType python setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
+    au FileType xml setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
 endif
 
 "if has("autocmd")

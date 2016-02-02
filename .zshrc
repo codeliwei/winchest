@@ -83,6 +83,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gclean='git reset --hard && git clean -df'
+alias ggrep='git grep'
+alias gs='git show'
 alias vi='vim'
 
 bindkey -v
