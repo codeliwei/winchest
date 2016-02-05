@@ -85,6 +85,7 @@ source $ZSH/oh-my-zsh.sh
 alias gclean='git reset --hard && git clean -df'
 alias ggrep='git grep'
 alias gs='git show'
+alias gds='git diff --staged'
 alias vi='vim'
 
 bindkey -v
