@@ -4,6 +4,8 @@ ZTV_ROOT=$PWD
 
 cd $HOME
 
+sudo apt-get install zsh tmux vim -y
+
 if [ ! -d .oh-my-zsh ]; then
 	git clone https://github.com/robbyrussell/oh-my-zsh.git .oh-my-zsh || exit
 fi
@@ -25,5 +27,7 @@ if [ -f .vimrc ]; then
 fi
 cp $ZTV_ROOT/.vimrc .vimrc
 
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
+	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi
 vim +PluginInstall +qall
