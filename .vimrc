@@ -21,6 +21,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-scripts/TeTrIs.vim'
+Plugin 'tpope/vim-fugitive'
 
 " default snippets (under .vim/bundle/vim-snippets/)
 "   contents:
@@ -165,6 +166,7 @@ endif
 if has("autocmd")
     au FileType python setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
     au FileType xml setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
+    au FileType sh setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
 endif
 
 "if has("autocmd")
@@ -197,5 +199,7 @@ let g:tmux_navigator_save_on_switch = 1
 
 " === CtrlP Options ===
 let g:ctrlp_map = '<c-f>'
-let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_cmd = 'CtrlPMixed' " CtrlP, CtrlPBuffer, CtrlPMRU, or CtrlPMixed
 let g:ctrlp_working_path_mode = 'ra'
+set wildignore+=*.so,*.swp,*.zip
+set wildignore+=*\\patches\\**
