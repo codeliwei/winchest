@@ -22,6 +22,7 @@ Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-scripts/TeTrIs.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'jiangmiao/auto-pairs'
 
 " default snippets (under .vim/bundle/vim-snippets/)
 "   contents:
