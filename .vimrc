@@ -23,6 +23,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'vim-scripts/TeTrIs.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'majutsushi/tagbar'
 
 " default snippets (under .vim/bundle/vim-snippets/)
 "   contents:
@@ -110,6 +111,14 @@ let Tlist_Exit_OnlyWindow=1
 let Tlist_GainFocus_On_ToggleOpen=1
 let Tlist_File_Fold_Auto_Close=1
 let Tlist_Enable_Fold_Colum=1
+
+" === Tagbar Options ===
+nmap <F8> :TagbarToggle<CR>
+let g:tagbar_left=1
+let g:tagbar_width=30
+let g:tagbar_autoclose=0
+let g:tagbar_sort=0
+"au VimEnter * nested :call tagbar#autoopen(1)
 
 " === Airline Options ===
 let g:airline_theme='papercolor'
