@@ -178,6 +178,8 @@ if has("autocmd")
     au FileType xml setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
     au FileType sh setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
     au FileType cpp setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
+    "make.inc is detected as pov filetype, set syntax to Makefile
+    au FileType pov set syntax=make
 endif
 
 "if has("autocmd")
