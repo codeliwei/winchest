@@ -2,6 +2,11 @@
 
 ZTV_ROOT=$PWD
 
+git config user.email "yxj@gmail.com"
+git config user.name "Xiaojie Yuan"
+git config core.editor vim
+git config push.default simple
+
 cd $HOME
 
 sudo apt-get install zsh tmux vim -y
@@ -9,10 +14,6 @@ sudo apt-get install zsh tmux vim -y
 if [ ! -d .oh-my-zsh ]; then
 	git clone https://github.com/robbyrussell/oh-my-zsh.git .oh-my-zsh || exit
 fi
-git config user.email "yxj@gmail.com"
-git config user.name "Xiaojie Yuan"
-git config core.editor vim
-git config push.default simple
 
 cp $ZTV_ROOT/llseek.zsh-theme ./.oh-my-zsh/themes/
 hostname_dfl=`cat /etc/hostname`
