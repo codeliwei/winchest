@@ -10,6 +10,7 @@ git config push.default simple
 cd $HOME
 
 sudo apt-get install zsh tmux vim -y
+sudo apt-get install ctags global -y
 
 if [ ! -d .oh-my-zsh ]; then
 	git clone https://github.com/robbyrussell/oh-my-zsh.git .oh-my-zsh || exit
