@@ -86,6 +86,8 @@ alias gclean='git reset --hard && git clean -df'
 alias ggrep='git grep'
 alias gs='git show'
 alias gds='git diff --staged'
+alias gfp='git format-patch'
+alias gfpk='git format-patch -k'
 alias vi='vim'
 
 bindkey -v
