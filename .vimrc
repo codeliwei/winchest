@@ -24,6 +24,7 @@ Plugin 'vim-scripts/TeTrIs.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'majutsushi/tagbar'
+Plugin 'tpope/vim-surround'
 
 " default snippets (under .vim/bundle/vim-snippets/)
 "   contents:
