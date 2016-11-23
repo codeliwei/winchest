@@ -104,3 +104,6 @@ export CVSEDITOR=vim
 
 # map capslock to ctrl
 setxkbmap -option caps:ctrl_modifier
+
+# source personal configs
+[[ -f .zshrc_priv ]] && source .zshrc_priv

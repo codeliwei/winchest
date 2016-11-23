@@ -31,7 +31,7 @@ chsh -s `which zsh`
 if [ -f .zshrc ]; then
 	rm -i .zshrc
 fi
-cp $ZTV_ROOT/.zshrc .zshrc
+ln -s $ZTV_ROOT/.zshrc
 
 if [ -f .tmux.conf ]; then
 	rm -i .tmux.conf
