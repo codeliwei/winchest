@@ -122,6 +122,9 @@ let g:tagbar_autoclose=0
 let g:tagbar_sort=0
 "au VimEnter * nested :call tagbar#autoopen(1)
 
+" === Nerdtree Options ===
+map <F7> :NERDTreeToggle<CR>
+
 " === Airline Options ===
 let g:airline_theme='papercolor'
 let g:airline#extensions#whitespace#mixed_indent_algo=1
