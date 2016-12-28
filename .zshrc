@@ -89,6 +89,7 @@ alias gds='git diff --staged'
 alias gfp='git format-patch'
 alias gfpk='git format-patch -k'
 alias vi='vim'
+alias l='ls'
 
 bindkey -v
 bindkey	'^R' history-incremental-search-backward
