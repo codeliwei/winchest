@@ -1,6 +1,12 @@
-#!/bin/sh -
+#!/usr/bin/env bash
 
 ZTV_ROOT=$PWD
+
+if [ `uname -s` == 'Darwin' ]; then
+  PKG_INSTALL='brew install'
+else
+  PKG_INSTALL='sudo apt install'
+fi
 
 git config user.email "yxj@gmail.com"
 git config user.name "Xiaojie Yuan"
@@ -9,15 +15,15 @@ git config push.default simple
 
 cd $HOME
 
-sudo apt-get install zsh tmux vim -y
-sudo apt-get install ctags global -y
+$PKG_INSTALL zsh tmux vim -y
+$PKG_INSTALL ctags global -y
 
 if [ ! -d .oh-my-zsh ]; then
 	git clone https://github.com/robbyrussell/oh-my-zsh.git .oh-my-zsh || exit
 fi
 
 cp $ZTV_ROOT/llseek.zsh-theme ./.oh-my-zsh/themes/
-hostname_dfl=`cat /etc/hostname`
+hostname_dfl=`hostname`
 echo -n "Enter your hostname(default '$hostname_dfl'): "
 read hostname
 if [ -z $hostname ]; then
