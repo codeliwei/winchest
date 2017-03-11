@@ -107,8 +107,5 @@ export CVSROOT=ncvs:/usr/cvsroot/cev
 export CVS_RSH=ssh
 export CVSEDITOR=vim
 
-# map capslock to ctrl
-#setxkbmap -option caps:ctrl_modifier
-
 # source personal configs
 [[ -f ~/..zshrc ]] && source ~/..zshrc
