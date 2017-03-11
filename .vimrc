@@ -25,7 +25,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-surround'
-Plugin 'yuratomo/w3m.vim'
 
 " default snippets (under .vim/bundle/vim-snippets/)
 "   contents:
@@ -221,6 +220,3 @@ let g:ctrlp_cmd = 'CtrlPMixed' " CtrlP, CtrlPBuffer, CtrlPMRU, or CtrlPMixed
 let g:ctrlp_working_path_mode = 'ra'
 set wildignore+=*.so,*.swp,*.zip
 set wildignore+=*\\patches\\**
-
-" === W3m Options ===
-let g:w3m#command = '/usr/bin/w3m'
