@@ -15,8 +15,14 @@ git config push.default simple
 
 cd $HOME
 
-$PKG_INSTALL zsh tmux vim -y
-$PKG_INSTALL ctags global -y
+$PKG_INSTALL git                \
+             zsh                \
+             tmux               \
+             vim                \
+             ctags              \
+             global             \
+             silversearcher-ag  \
+             -y
 
 if [ ! -d .oh-my-zsh ]; then
 	git clone https://github.com/robbyrussell/oh-my-zsh.git .oh-my-zsh || exit
