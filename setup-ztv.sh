@@ -22,9 +22,7 @@ $PKG_INSTALL git                \
              tmux               \
              vim                \
              ctags              \
-             global             \
-             silversearcher-ag  \
-             the_silver_searcher\
+             global
 
 if [ ! -d .oh-my-zsh ]; then
 	git clone https://github.com/robbyrussell/oh-my-zsh.git .oh-my-zsh || exit
