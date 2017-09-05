@@ -3,13 +3,11 @@
 ZTV_ROOT=$PWD
 
 if [ `uname -s` == 'Darwin' ]; then
-  PKG_INSTALL='brew install'
-  PKG_INSTALL_FLAG='-y'
+  PKG_INSTALL='brew -y install'
 elif [[ $(cat /etc/os-release) =~ "SUSE" ]]; then
   PKG_INSTALL='sudo zypper --non-interactive install'
 else
-  PKG_INSTALL='sudo apt install'
-  PKG_INSTALL_FLAG='-y'
+  PKG_INSTALL='sudo apt -y install'
 fi
 
 git config user.email "yxj@gmail.com"
@@ -27,7 +25,6 @@ $PKG_INSTALL git                \
              global             \
              silversearcher-ag  \
              the_silver_searcher\
-             $PKG_INSTALL_FLAG
 
 if [ ! -d .oh-my-zsh ]; then
 	git clone https://github.com/robbyrussell/oh-my-zsh.git .oh-my-zsh || exit
