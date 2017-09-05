@@ -187,6 +187,7 @@ if has("autocmd")
     au FileType cpp setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
     "make.inc is detected as pov filetype, set syntax to Makefile
     au FileType pov set syntax=make
+    au BufRead,BufNewFile *.jelly set syntax=html
 endif
 
 "if has("autocmd")
