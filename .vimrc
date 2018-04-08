@@ -41,6 +41,7 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'kien/ctrlp.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-scripts/ScrollColors'
+Plugin 'vim-scripts/ZoomWin'
 
 " iOS development specific
 "Plugin 'Rip-Rip/clang_complete'
