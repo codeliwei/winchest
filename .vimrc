@@ -168,6 +168,9 @@ endfunction
 "nnoremap <silent> ` :Errors<CR>
 " Tell it to use clang instead of gcc
 "let g:syntastic_objc_checker = 'clang'
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+let g:syntastic_enable_signs = 0
 
 " === AutoCmd Options ===
 if has("autocmd")
