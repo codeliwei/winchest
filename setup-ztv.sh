@@ -59,3 +59,6 @@ if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 vim +PluginInstall +qall
+
+echo '    StrictHostKeyChecking no' | sudo tee -a /etc/ssh/ssh_config
+echo '    UserKnownHostsFile /dev/null' | sudo tee -a /etc/ssh/ssh_config
