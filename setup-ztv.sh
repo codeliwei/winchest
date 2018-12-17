@@ -45,3 +45,6 @@ vim +PluginInstall +qall
 
 echo '    StrictHostKeyChecking no' | sudo tee -a /etc/ssh/ssh_config
 echo '    UserKnownHostsFile /dev/null' | sudo tee -a /etc/ssh/ssh_config
+
+sudo cp $ZTV_ROOT/fonts/* /usr/share/fonts
+sudo fc-cache -f
