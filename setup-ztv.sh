@@ -29,13 +29,6 @@ if [ ! -d .oh-my-zsh ]; then
 fi
 
 cp $ZTV_ROOT/llseek.zsh-theme ./.oh-my-zsh/themes/
-hostname_dfl=`hostname`
-echo -n "Enter your hostname(default '$hostname_dfl'): "
-read hostname
-if [ -z $hostname ]; then
-	hostname=$hostname_dfl
-fi
-sed -i "s/127.0.0.1/$hostname/g" ./.oh-my-zsh/themes/llseek.zsh-theme
 
 echo "Enter your sudo passwd to chsh: "
 chsh -s `which zsh`
