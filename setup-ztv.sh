@@ -33,20 +33,10 @@ cp $ZTV_ROOT/llseek.zsh-theme ./.oh-my-zsh/themes/
 echo "Enter your sudo passwd to chsh: "
 chsh -s `which zsh`
 
-if [ -f .zshrc ]; then
-	rm -i .zshrc
-fi
-ln -s $ZTV_ROOT/.zshrc
-
-if [ -f .tmux.conf ]; then
-	rm -i .tmux.conf
-fi
-ln -s $ZTV_ROOT/.tmux.conf
-
-if [ -f .vimrc ]; then
-	rm -i .vimrc
-fi
-ln -s $ZTV_ROOT/.vimrc
+for f in .zshrc .tmux.conf .vimrc; do
+  mv $f $f.old
+  ln -s $ZTV_ROOT/$f
+done
 
 if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
