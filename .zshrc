@@ -111,4 +111,4 @@ export CVSEDITOR=vim
 # source personal configs
 [[ -f ~/..zshrc ]] && source ~/..zshrc
 
-setxkbmap -option caps:ctrl_modifier
+# setxkbmap -option caps:ctrl_modifier
